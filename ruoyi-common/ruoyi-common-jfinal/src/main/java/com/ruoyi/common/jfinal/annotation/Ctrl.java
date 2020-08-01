@@ -1,0 +1,1 @@
+package com.ruoyi.common.jfinal.annotation;import java.lang.annotation.*;/** * 定义Jfinal Controller路由 * @author chenmin */@Target({ElementType.TYPE})@Retention(RetentionPolicy.RUNTIME)@Documented@Inheritedpublic @interface Ctrl {    /**     * 路由值     * @return     */    String value() default "";    String viewPath();}
