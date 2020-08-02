@@ -6,8 +6,13 @@ import com.jfinal.kit.Kv;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
 import com.jfinal.render.FreeMarkerRender;
+import com.qin.video.model.Theme;
 import com.ruoyi.common.jfinal.annotation.Ctrl;
+import freemarker.cache.FileTemplateLoader;
+import freemarker.cache.TemplateLoader;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 @Ctrl(value = "/", viewPath = IndexController.VIEW_PATH)
@@ -20,8 +25,12 @@ public class IndexController extends Controller {
         renderJson(records);
     }
 
-    public void setting(){
-        FreeMarkerRender.setTemplateLoadingPath("classes/templates/");
+    public void setting() throws IOException {
         render("setting.html");
+    }
+
+    public void user(){
+        Theme t = new Theme();
+        renderJson(t.findAll());
     }
 }
