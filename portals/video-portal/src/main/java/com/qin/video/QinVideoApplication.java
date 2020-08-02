@@ -17,7 +17,6 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ClassUtils;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -52,7 +51,7 @@ public class QinVideoApplication implements ApplicationListener<ApplicationReady
             String path = ClassUtils.getDefaultClassLoader().getResource("").getPath();
             TemplateLoader templateLoader=new FileTemplateLoader(new File(path+freemarkerpath));
             FreeMarkerRender.getConfiguration().setTemplateLoader(templateLoader);
-            //************ 设置freemarker更路径 end   ************//
+            //************ 设置freemarker页面根路径 end   ************//
         }catch (IOException e){
 
         }
