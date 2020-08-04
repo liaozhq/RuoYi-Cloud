@@ -17,6 +17,7 @@
         <module>ruoyi-common-datascope</module>
         <module>ruoyi-common-jfinal</module>
         <module>ruoyi-common-mongodb</module>
+        <module>ruoyi-common-elasticsearch</module>
     </modules>
 
     <artifactId>ruoyi-common</artifactId>

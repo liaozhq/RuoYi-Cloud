@@ -1,0 +1,1 @@
+# Auto Configureorg.springframework.boot.autoconfigure.EnableAutoConfiguration=\com.qin.mongo.configure.MongoConfigure,\com.qin.mongo.service.MongoService

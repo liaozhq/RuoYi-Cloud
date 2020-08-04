@@ -214,6 +214,7 @@
 		<module>ruoyi-api</module>
 		<module>ruoyi-common</module>
         <module>portals</module>
+        <module>crawlspiders</module>
     </modules>
     <packaging>pom</packaging>
 
