@@ -103,5 +103,4 @@ public class MongoPageHelper {
         pageResult.setList(entityList.stream().map(mapper).collect(Collectors.toList()));
         return pageResult;
     }
-
 }
