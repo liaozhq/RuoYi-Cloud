@@ -215,6 +215,7 @@
 		<module>ruoyi-common</module>
         <module>portals</module>
         <module>crawlspiders</module>
+        <module>domes</module>
     </modules>
     <packaging>pom</packaging>
 

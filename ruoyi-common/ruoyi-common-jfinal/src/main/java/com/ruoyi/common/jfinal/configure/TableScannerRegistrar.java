@@ -1,6 +1,5 @@
 package com.ruoyi.common.jfinal.configure;
 
-import com.ruoyi.common.jfinal.annotation.Ctrl;
 import com.ruoyi.common.jfinal.annotation.JfinalModelScan;
 import com.ruoyi.common.jfinal.annotation.Table;
 import lombok.Data;
